@@ -1,0 +1,80 @@
+@property --pattern-seed {
+  syntax: "<number>";
+  initial-value: 1000;
+  inherits: true;
+}
+
+@property --pattern-colors {
+  syntax: "<color>#";
+  initial-value: #0b5369, #FF0000, #f2f2f2;
+  inherits: true;
+}
+
+@property --pattern-speck-count {
+  syntax: "<number>";
+  initial-value: 1500;
+  inherits: true;
+}
+
+@property --pattern-speck-min-size {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: true;
+}
+
+@property --pattern-speck-max-size {
+  syntax: "<number>";
+  initial-value: 1;
+  inherits: true;
+}
+
+body {
+  margin: 0;
+  background-color: #FBFBF8;
+}
+
+.canvas {
+  height: 100vh;
+  margin: 0px 100px;
+  background-image: paint(tinySpecksPattern);
+
+}
+
+.receipt {
+  padding-top: 100px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  min-height: calc(100vh - 40px);
+}
+
+.shipping-details {
+  padding: 5px;
+  margin-top: 25px;
+  border: 2px solid rgb(140 140 140);
+  display: flex;
+}
+
+.shipping-metadata {
+  flex: 1;
+}
+
+.purchase-metadata {
+  flex: 1;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  text-align: center;
+}

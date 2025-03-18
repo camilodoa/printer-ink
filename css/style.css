@@ -24,7 +24,7 @@
 
 @property --pattern-speck-max-size {
   syntax: "<number>";
-  initial-value: 1;
+  initial-value: 1.5;
   inherits: true;
 }
 
@@ -36,7 +36,7 @@ body {
 .canvas {
   height: 100vh;
   margin: 0px 100px;
-  background-image: paint(tinySpecksPattern);
+  background-image: paint(pattern);
 
 }
 
